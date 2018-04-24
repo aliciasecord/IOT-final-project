@@ -34,9 +34,9 @@
       <!-- Homepage Main Section-->
       <div class="main">
         <section class="split-home">
-          <section style="background-image: url(assets/images/project.jpg)" class="left-section personal wow fadeIn" data-wow-delay="0.3s">
+          <a id="prototypesection" href="https://app.botsociety.io/s/5adb96ac65d6ed0010d12532?p=26a8784429fb4c5130f9867213095b54b2b57cc8"><section style="background-image: url(assets/images/project-early.png)" class="left-section personal wow fadeIn" data-wow-delay="0.3s">
 
-          </section>
+          </section></a>
           <section class="right-section">
             <div class="top-nav hidden-xs hidden-sm wow fadeIn" data-wow-delay="0.3s">
               <ul>
@@ -51,18 +51,28 @@
                   <h1 class="wow fadeIn"  data-wow-delay=".3s">Early Prototype</h1>
                   <h4 class="wow fadeIn"  data-wow-delay=".4s">Voice-Assisted Emergency Room Finder</h4>
                   <p class="wow fadeIn"  data-wow-delay=".5s">
-                    Brute suavitate maiestatis qui in, an eam sumo illud.
-                    Explicari necessitatibus eam et. Ea oratio voluptua postulant eam, sit eu tale molestiae,
-                    verear latine concludaturque ex vel. Sed mutat etiam utroque te, vis at error eirmod numquam.
-                    Ea oratio voluptua postulant eam, sit eu tale molestiae,
-                    verear latine concludaturque ex vel. Sed mutat etiam utroque te, vis at error eirmod numquam.
+                    At this phase, I have determined how to use the Mapbox API + Data.Medicare.Gov to geolocate the 4806 hospitals in the US that have emergency departments. The next steps include geolocating the user and using the Mapbox Directions API to find the closest hospital with the shortest wait. This would conclude development of the backend.
+                    <br /><br />In the mean time, I have mocked up a prototype of how the interaction might go in BotSociety. This will guide the development of the DialogFlow for the voice side of the interface.
                   </p>
                 </div>
               </div>
               <div class="project-image">
-                <img class="img-responsive wow fadeIn"  data-wow-delay=".6s" src="assets/images/project-image.jpg" alt="Project Image" />
+                <h3>Uses MapBox API to geolocate hospitals around the US <br /><br /></h3>
+                <img class="img-responsive wow fadeIn"  data-wow-delay=".6s" src="assets/images/mapWithMarkers.png" alt="Project Image" />
               </div>
-
+              <div class="project-image">
+                <h3>PseudoCode shows what needs to happen on the backend <br /><br /></h3>
+                <div style="padding:10px; background-color:#ECEEEE; width:600px;">
+                  <code>
+                    > Get user location and save to variable<br>
+                    > Aggregate locations of and wait times at hospitals <br>
+                    > Compare user location to list of hospital locations <br>
+                    > Calculate distance plus wait time of ten closest hospitals <br>
+                    > Output result that offers least drive + wait time <br>
+                    > Look up phone number and connect call to check wait time
+                  </code>
+                </div>
+              </div>
               <div class="col-md-12">
                 <div class="project-nav">
                   <div class="left-nav">

@@ -74,6 +74,14 @@ table {
 	border-spacing: 0;
 }
 
+code {
+	color: black;
+	background-color: transparent;
+	font-family: monospace;
+	white-space: normal;
+	display: inline-block;
+	max-width: 600px;
+}
 
 /* --- Common Styles ---*/
 
@@ -1184,6 +1192,10 @@ h1, h2, h3, h4, h5, h6 {
 	-o-transform: translateX(0);
 	 transform: translateX(0);
 }
+
+#prototypesection:hover {
+	background-image: url(assets/images/project-early-hover.jpg)
+	}
 
 /* -----------------------------------------------
 ----------- Project Single Styling End -----------
